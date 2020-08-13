@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text,TextInput,Button,FlatList } from 'react-native';
 import { HubConnectionBuilder, LogLevel } from '@aspnet/signalr';
 
 export default class App extends Component {
@@ -41,8 +41,8 @@ export default class App extends Component {
   }
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to Simple SignalR</Text>
+      <View>
+        <Text>Welcome to Simple SignalR</Text>
         <TextInput
           placeholder={"Nick name"}
           style={{ height: 40, width: 250, borderColor: 'gray', borderWidth: 1 }}
